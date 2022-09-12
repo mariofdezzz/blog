@@ -11,10 +11,6 @@
 </template>
 
 <style lang="scss">
-$bg: hwb(0 100% 0%);
-$on-bg: hwb(232 36% 52%);
-$max-text-width: 80ch;
-
 body {
   background-color: $bg;
   color: $on-bg;

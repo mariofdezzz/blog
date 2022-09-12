@@ -7,5 +7,16 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false
   },
-  css: ['@/assets/styles/index.scss']
+  css: ['@/assets/styles/index.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @import "@/assets/styles/variables/index.scss";
+          `
+        }
+      }
+    }
+  }
 })
