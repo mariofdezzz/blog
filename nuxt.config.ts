@@ -6,5 +6,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   imports: {
     autoImport: false
-  }
+  },
+  css: ['@/assets/styles/index.scss']
 })
