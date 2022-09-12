@@ -1,5 +1,41 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div id="app">
+    <!-- <header></header> -->
+
+    <main>
+      <NuxtPage />
+    </main>
+
+    <!-- <footer></footer> -->
   </div>
 </template>
+
+<style lang="scss">
+$bg: hwb(0 100% 0%);
+$on-bg: hwb(232 36% 52%);
+$max-text-width: 80ch;
+
+body {
+  background-color: $bg;
+  color: $on-bg;
+}
+
+#app {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template: auto 1fr auto / 1fr min($max-text-width, calc(100% - 2rem)) 1fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+
+  header,
+  footer {
+    grid-column: 1/4;
+  }
+
+  main {
+    grid-column: 2;
+  }
+}
+</style>
