@@ -1,17 +1,24 @@
 <template>
-  <div class="no-posts">
-    <h2>
-      Nothing to see here
-      <span class="blinking">
-        yet
-      </span>
-    </h2>
+  <div>
+    <h1>Latest Posts</h1>
 
-    <img src="assets/images/pixel-doggo.gif" alt="Swimming dog">
+    <div class="no-posts">
+      <h2>
+        Nothing to see here
+        <span class="blinking"> yet </span>
+      </h2>
+
+      <img src="assets/images/pixel-doggo.gif" alt="Swimming dog">
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+h1,
+h2 {
+  margin-bottom: 2rem;
+}
+
 .no-posts {
   text-align: center;
 
