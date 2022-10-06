@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { useDark, useToggle } from '../composables'
+import Button from './common/Button.vue'
+import Moon from './common/svg/Moon.vue'
+import Sun from './common/svg/Sun.vue'
+
+const isDark = useDark({
+  selector: ':root'
+})
+const toggleTheme = useToggle(isDark)
+</script>
+
 <template>
   <header>
     <nav>
@@ -7,15 +19,21 @@
             ./mariofdezzz.dev
           </NuxtLink>
         </h4>
+
+        <!-- TODO: Add lang selector -->
+
+        <Button>
+          <Moon v-if="isDark" @click="toggleTheme()" />
+          <Sun v-else @click="toggleTheme()" />
+        </Button>
       </div>
     </nav>
-    <!-- TODO: Add color theme, add lang selector -->
   </header>
 </template>
 
 <style scoped lang="scss">
 header {
-  padding-top: 1.5rem ;
+  padding-top: 1.5rem;
   display: grid;
   grid-template-columns: 1fr min($max-text-width, calc(100% - 2rem)) 1fr;
   row-gap: 2rem;
@@ -30,6 +48,12 @@ header {
 
     h4 > a {
       color: $on-bg;
+    }
+
+    .navbar-brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

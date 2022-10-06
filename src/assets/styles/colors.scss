@@ -1,8 +1,18 @@
-:root {
+:root,
+:root[color-scheme="light"] {
   --bg: hwb(0 100% 0%);
   --on-bg: hwb(231 36% 52%);
   --on-bg-disabled: hwb(230 82% 11%);
   --primary: hwb(235 29% 11%);
+  // --on-primary: hsl(0, 0%, 100%);
+  --secondary: linear-gradient(45deg, hwb(333 16% 14%) 0%, hwb(38 4% 4%) 100%);
+}
+
+:root[color-scheme="dark"] {
+  --bg: hwb(233 11% 82%);
+  --on-bg: hwb(223 86% 8%);
+  --on-bg-disabled: hwb(231 36% 52%);
+  --primary: hwb(43 15% 1%);
   // --on-primary: hsl(0, 0%, 100%);
   --secondary: linear-gradient(45deg, hwb(333 16% 14%) 0%, hwb(38 4% 4%) 100%);
 }

@@ -1,0 +1,18 @@
+$time: 0.5s;
+$animation: ease;
+
+* {
+  transition: background-color $time $animation;
+}
+
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition: color $time $animation;
+}
