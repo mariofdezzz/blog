@@ -9,6 +9,6 @@
 
 <style scoped lang="scss">
 svg {
-  width: 1.35rem;
+  width: 1.5rem;
 }
 </style>

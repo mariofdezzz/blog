@@ -23,6 +23,13 @@ h6 {
   margin-bottom: 2rem;
 }
 
+h2 {
+  font-size: 22px;
+}
+h3{
+  font-size: 16px;
+}
+
 .no-posts {
   text-align: center;
 

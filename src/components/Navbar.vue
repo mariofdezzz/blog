@@ -14,11 +14,9 @@ const toggleTheme = useToggle(isDark)
   <header>
     <nav>
       <div class="navbar-brand">
-        <h4>
-          <NuxtLink to="/">
-            ./mariofdezzz.dev
-          </NuxtLink>
-        </h4>
+        <NuxtLink to="/">
+          ./mariofdezzz.dev
+        </NuxtLink>
 
         <!-- TODO: Add lang selector -->
 
@@ -46,8 +44,9 @@ header {
     border-bottom: 1px solid $on-bg-disabled;
     padding-bottom: 0.5rem;
 
-    h4 > a {
+     a {
       color: $on-bg;
+      font-size: 1.05rem;
     }
 
     .navbar-brand {
