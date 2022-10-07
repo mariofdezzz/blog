@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Latest Posts</h1>
+    <h2>Latest Posts</h2>
 
     <div class="no-posts">
-      <h2>
+      <h3>
         Nothing to see here
         <span class="blinking"> yet </span>
-      </h2>
+      </h3>
 
       <img src="assets/images/pixel-doggo.gif" alt="Swimming dog">
     </div>
@@ -15,14 +15,23 @@
 
 <style scoped lang="scss">
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 2rem;
 }
 
 .no-posts {
   text-align: center;
 
-  h2 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 2rem;
     opacity: 0.8;
   }
