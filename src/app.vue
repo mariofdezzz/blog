@@ -3,7 +3,16 @@ import { useHead } from '#app'
 import Navbar from './components/Navbar.vue'
 
 useHead({
-  title: 'Mario\'s Blog'
+  title: 'Mario\'s Blog',
+  htmlAttrs: {
+    lang: 'en'
+  },
+  meta: [
+    {
+      name: 'description',
+      content: 'I\'m Mario Ferrero (@mariofdezzz) and I work as a Software Engineer. I use this blog to share and reinforce my knowledge, so I can grow personally and make our community grow too.'
+    }
+  ]
 })
 </script>
 

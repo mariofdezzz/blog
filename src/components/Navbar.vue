@@ -22,7 +22,7 @@ const toggleTheme = useToggle(isDark)
 
         <!-- TODO: Add lang selector -->
 
-        <Button>
+        <Button :aria-label="'Toggle color theme'">
           <Moon v-if="isDark" @click="toggleTheme()" />
           <Sun v-else @click="toggleTheme()" />
         </Button>
